@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txthello"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang di E-Dagang!"
+            android:textColor="#FCFFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:text="USERNAME"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00BCD4"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PASSWORD"
+            android:textColor="#fff"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00BCD4"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BBBBBB"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/linkdaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gk ada akun ya? Daftar Sini!"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:onClick="serve"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
